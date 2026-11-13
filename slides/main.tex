@@ -1,0 +1,24 @@
+% main.tex: the talk, 14 slides, one file per slide.
+% Compile with:  latexmk -pdf main.tex      (inside the slides/ folder)
+% The pictures come from ../images (made by src/03_make_images.py).
+\documentclass[aspectratio=169,11pt]{beamer}
+\input{preamble}
+\graphicspath{{../}}
+\begin{document}
+
+\input{01_title}
+\input{02_client}
+\input{03_data_map}
+\input{04_data_details}
+\input{05_hypotheses}
+\input{06_h1_where}
+\input{07_focus}
+\input{08_h2_quality}
+\input{09_h2_more}
+\input{10_h3_when}
+\input{11_h3_example}
+\input{12_insights}
+\input{13_advice}
+\input{14_wrap_up}
+
+\end{document}

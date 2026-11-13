@@ -1,0 +1,27 @@
+% ==========================================================================
+% SLIDE 2: Our client: Erin Robinson
+% Pauses (click 1: sentence, 2: the three titles, 3: the descriptions), written with kvis=n and \kreveal{n}{...}. main_nopauses.tex shows everything at once.
+% ==========================================================================
+\def\secc{knavy}\def\secct{white}
+\begin{frame}[t]{Our client: Erin Robinson}
+\leavevmode
+\atpos{0.8}{1.4}{14.4}{%
+\centering{\large\itshape\color{knavy}Erin wants to invest in poor neighborhoods, buying and selling houses, recovering her costs plus a small profit, and acting in a socially responsible way.}
+}
+\atpos{0}{0}{16}{%
+\begin{tikzpicture}
+\useasboundingbox (0.00,0.00) rectangle (16.00,-8.60);
+\node[kvis=2,fill=knavy!9,draw=knavy!70,line width=1pt,rounded corners=13pt,text width=4.60cm,minimum height=2.10cm,align=left,anchor=north west,inner sep=6pt] at (0.25,-4.05) {\pillnum{knavy}{1}\;{\large\bfseries\color{knavy}Lower-priced areas}\\[3pt]\kreveal{3}{\small\color{knavy}Neighbourhoods with a median sale price in the bottom 25\%.}};
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (6.78,-5.30) circle (0.06);
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (6.02,-5.30) circle (0.1);
+\node[kvis=2,fill=knavy!9,draw=knavy!70,line width=1pt,rounded corners=13pt,text width=4.60cm,minimum height=2.10cm,align=left,anchor=north west,inner sep=6pt] at (5.45,-2.35) {\pillnum{knavy}{2}\;{\large\bfseries\color{knavy}A small profit}\\[3pt]\kreveal{3}{\small\color{knavy}Recover her costs plus about 5-10\%.}};
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (8.00,-4.94) circle (0.06);
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (8.00,-4.70) circle (0.1);
+\node[kvis=2,fill=knavy!9,draw=knavy!70,line width=1pt,rounded corners=13pt,text width=4.60cm,minimum height=2.10cm,align=left,anchor=north west,inner sep=6pt] at (10.65,-4.05) {\pillnum{knavy}{3}\;{\large\bfseries\color{knavy}Socially responsible}\\[3pt]\kreveal{3}{\small\color{knavy}Modest markups; improve houses in poor condition, no quick flips.}};
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (9.22,-5.30) circle (0.06);
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (9.98,-5.30) circle (0.1);
+\begin{scope}[shift={(8.0,-8.45)},scale=0.72]\clientfigure\end{scope}
+\end{tikzpicture}
+}
+
+\end{frame}

@@ -1,0 +1,27 @@
+% ==========================================================================
+% SLIDE 5: Our three hypotheses
+% Pauses: click 1 question and "?"; click 2 H1; click 3 H2; click 4 H3 (kvis=n).
+% ==========================================================================
+\def\secc{knavy}\def\secct{white}
+\begin{frame}[t]{Our three hypotheses}
+\leavevmode
+\atpos{0.8}{1.4}{14.4}{%
+\centering{\large\itshape\color{knavy}In which low-priced neighborhoods, and at what time of year, can Erin buy and resell houses to recover her costs plus a small profit, in a socially responsible way?}
+}
+\atpos{0}{0}{16}{%
+\begin{tikzpicture}
+\useasboundingbox (0.00,0.00) rectangle (16.00,-8.60);
+\node[kvis=2,fill=kteal!13,draw=kteal!75,line width=1pt,rounded corners=13pt,text width=4.60cm,minimum height=2.30cm,align=left,anchor=north west,inner sep=6pt] at (0.25,-4.20) {\hyperlink{st_where}{{\large\bfseries\color{kteal!60!black}H1  Where?}\\[3pt]{\small\color{knavy}Low-priced zipcodes are geographically clustered (median price in the bottom 25\%).}}};
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (6.72,-6.61) circle (0.06);
+\fill[kvis=2,knavy!9,draw=knavy!70,line width=0.8pt] (6.00,-6.35) circle (0.1);
+\node[kvis=3,fill=kcoral!13,draw=kcoral!75,line width=1pt,rounded corners=13pt,text width=4.60cm,minimum height=2.30cm,align=left,anchor=north west,inner sep=6pt] at (5.45,-2.50) {\hyperlink{st_quality}{{\large\bfseries\color{kcoral!60!black}H2  What?}\\[3pt]{\small\color{knavy}Within low-priced zipcodes, the higher the \col{grade} and \col{condition}, the higher the price per sqft.}}};
+\fill[kvis=3,knavy!9,draw=knavy!70,line width=0.8pt] (8.00,-5.80) circle (0.06);
+\fill[kvis=3,knavy!9,draw=knavy!70,line width=0.8pt] (8.00,-5.45) circle (0.1);
+\node[kvis=4,fill=kviolet!13,draw=kviolet!75,line width=1pt,rounded corners=13pt,text width=4.60cm,minimum height=2.30cm,align=left,anchor=north west,inner sep=6pt] at (10.65,-4.20) {\hyperlink{st_when}{{\large\bfseries\color{kviolet!60!black}H3  When?}\\[3pt]{\small\color{knavy}Sale prices are higher in spring and summer than in autumn and winter.}}};
+\fill[kvis=4,knavy!9,draw=knavy!70,line width=0.8pt] (9.28,-6.61) circle (0.06);
+\fill[kvis=4,knavy!9,draw=knavy!70,line width=0.8pt] (10.00,-6.35) circle (0.1);
+\node[circle,fill=knavy,text=white,minimum size=1.9cm,inner sep=0pt,font=\fontsize{40}{40}\selectfont\bfseries] at (8.00,-6.95) {?};
+\end{tikzpicture}
+}
+
+\end{frame}

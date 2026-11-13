@@ -1,0 +1,117 @@
+[
+ {
+  "slide": "04_data_details",
+  "what": "houses (a house sold twice counts once)",
+  "text": "21,420"
+ },
+ {
+  "slide": "04_data_details",
+  "what": "sales",
+  "text": "21,597"
+ },
+ {
+  "slide": "04_data_details",
+  "what": "zipcodes",
+  "text": "70"
+ },
+ {
+  "slide": "04_data_details",
+  "what": "median sale price, whole county",
+  "text": "$450,000"
+ },
+ {
+  "slide": "04_data_details",
+  "what": "first month of sales",
+  "text": "May 2014"
+ },
+ {
+  "slide": "04_data_details",
+  "what": "last month of sales",
+  "text": "May 2015"
+ },
+ {
+  "slide": "04_data_details",
+  "what": "number of months",
+  "text": "13 months"
+ },
+ {
+  "slide": "06_h1_where",
+  "what": "lower-priced zipcodes",
+  "text": "18 of 70"
+ },
+ {
+  "slide": "07_focus",
+  "what": "number of lower-priced zipcodes",
+  "text": "18 zipcodes"
+ },
+ {
+  "slide": "08_h2_quality",
+  "what": "median price per sqft, condition 5",
+  "text": "$186"
+ },
+ {
+  "slide": "10_h3_when",
+  "what": "spring and summer together, median price per sqft above autumn and winter together",
+  "text": "3%"
+ },
+ {
+  "slide": "10_h3_when",
+  "what": "spring (Mar to May 2015) alone above autumn and winter (Sep to Feb)",
+  "text": "7%"
+ },
+ {
+  "slide": "11_h3_example",
+  "what": "example: median price per sqft, November 2014 (bought)",
+  "text": "$162"
+ },
+ {
+  "slide": "11_h3_example",
+  "what": "example: median price per sqft, May 2015 (sold 6 months later)",
+  "text": "$173"
+ },
+ {
+  "slide": "11_h3_example",
+  "what": "example: change from November to May",
+  "text": "+6.6%"
+ },
+ {
+  "slide": "12_insights",
+  "what": "the lower-priced zipcodes are this far below the county median",
+  "text": "38%"
+ },
+ {
+  "slide": "12_insights",
+  "what": "condition 5 against condition 3, price per sqft",
+  "text": "18%"
+ },
+ {
+  "slide": "12_insights",
+  "what": "spring above autumn and winter",
+  "text": "7%"
+ },
+ {
+  "slide": "13_advice",
+  "what": "bought Sep to Nov, sold 6 months later",
+  "text": "+6%"
+ },
+ {
+  "slide": "09_h2_more",
+  "what": "median price per sqft, biggest vs smallest houses (over 2,500 vs under 1,200 sqft)",
+  "text": "34%"
+ },
+ {
+  "slide": "09_h2_more",
+  "what": "median price per sqft, smallest houses (under 1,200 sqft)",
+  "text": "$208"
+ },
+ {
+  "slide": "09_h2_more",
+  "what": "median price per sqft, biggest houses (over 2,500 sqft)",
+  "text": "$138"
+ },
+ {
+  "slide": "14_wrap_up",
+  "what": "months of past sales",
+  "text": "13 months"
+ }
+]

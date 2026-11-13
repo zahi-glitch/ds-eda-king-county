@@ -1,0 +1,30 @@
+SPEAKER NOTES: 10 MINUTES OF TALK + 2 MINUTES OF QUESTIONS
+================================================================================
+ 1. 0:00-0:15  Title
+      Welcome. Erin wants to buy, improve and resell houses fairly. Where should she look?
+ 2. 0:15-0:45  Our client: Erin Robinson
+      Read the sentence, PAUSE; three titles, PAUSE; then the descriptions (they are our assumptions).
+ 3. 0:45-1:05  One year of house sales in King County
+      Each dot is a house sold, coloured by price. PAUSE; dark = expensive, yellow = cheaper (south); PAUSE; same county, very different prices.
+ 4. 1:05-1:35  The data at a glance
+      21,597 sales, 70 zipcodes; PAUSE; good to know: 13 months only, medians because of a few very expensive sales.
+ 5. 1:35-2:05  Our three hypotheses
+      Where, what, when: one question each, one bubble per click (PAUSE between).
+ 6. 2:05-3:05  H1: where are the lower-priced zipcodes?
+      Dot chart, PAUSE, then map and text: 18 of 70 zipcodes, all in the south; none of the 30 north of downtown.
+ 7. 3:05-3:35  Focus: the lower-priced zipcodes
+      Box plot, PAUSE, bar chart, PAUSE, text. From here on only these zipcodes. They are much cheaper, and twice as many houses are built to a lower standard (grade 6 or lower): that leads to H2.
+ 8. 3:35-5:05  H2: does quality raise the price per sqft?
+      Grade chart, PAUSE, text, PAUSE, condition chart, PAUSE, text. Only the best condition pays: condition 5 sells for $186 per sqft, conditions 2 to 4 for about $160 (see the chart). Grade: no extra price from 7 up. Most sales are already grade 7 or higher (82%), few are condition 5 (6%).
+ 9. 5:05-5:35  The bigger the house, the cheaper each sqft
+      Title only, PAUSE, intro and correlation chart, PAUSE, orange headline, sentence and grey comment. Big houses cost more in total but less per sqft: $208 per sqft under 1,200 sqft, $138 over 2,500 sqft. Only a lead: to test renovating or splitting we need more data (costs, zoning, permits). If asked: rank correlations are in reports/numbers.md (living area -0.51, condition +0.10 with price per sqft; part of that link is built in, since price per sqft is price divided by living area).
+10. 5:35-6:35  H3: are prices higher in spring and summer?
+      Title, PAUSE, chart, PAUSE, text. Spring and summer together are about 3% above autumn and winter, but all of it is spring (7%); summer is level. One year only: May 2015 is also 11% above May 2014, so season and trend overlap.
+11. 6:35-7:20  H3: an example
+      The bold part of the line: bought in November at $162 per sqft, sold 6 months later in May at $173: +6.6%. Buying Sep to Nov and selling 6 months later gained +6% on average (May to Aug buys: +1%).
+12. 7:20-8:20  Three insights
+      Geography, quality, timing: one card per click.
+13. 8:20-10:00  Advice for Erin
+      Where, what, when, how: one per click. If asked about social responsibility: buy grade 7 or higher (renovation cannot change the grade) and aim to bring the condition to 5. A comment only: we have no data on renovation costs.
+14. 10:00-12:00  Assumptions, next steps, questions
+      This slide stays up during the two minutes of questions: assumptions and limits (13 months only, medians, no costs), then possible next steps: big houses are cheaper per sqft (renovate, maybe split: zoning, permits and costs not checked), bargains, more months of data.

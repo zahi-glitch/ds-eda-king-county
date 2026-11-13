@@ -1,0 +1,93 @@
+% ==============================================================================================
+% preamble.tex: colours, footer, and the small building blocks used on the slides.
+% Edit this file by hand: nothing in this project overwrites it.
+%
+%   Colours   kteal = where / lower-priced zipcodes      kcoral = what / quality / bargains
+%             kviolet = when / timing                    knavy = text, advice, assumptions
+%   Blocks    \knote{colour}{width}{title}{text}      plain text with a thin coloured rule on the left
+%             \knum{colour}{width}{number}{label}      a big number
+%             \card{colour}{width}{title}{text}{h}     a rounded box (used for the insights only)
+%             \pillnum{colour}{n}                      a numbered circle
+%   Placement \atpos{x}{y}{width}{...}                 a block x, y cm from the top-left corner of the slide
+%             \atfrom{n}{x}{y}{width}{...}             the same, from click n on
+%             \aton{n}{x}{y}{width}{...}               the same, only on click n
+% The slide is 16 cm x 9 cm.
+% ==============================================================================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\IfFileExists{lato.sty}{\usepackage[default]{lato}}{}
+\usepackage{tikz}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{booktabs}
+\definecolor{kteal}{HTML}{2A9D8F}
+\definecolor{kcoral}{HTML}{E76F51}
+\definecolor{kviolet}{HTML}{7A5BB0}
+\definecolor{knavy}{HTML}{264653}
+\definecolor{kyellow}{HTML}{D48F00}
+\definecolor{kblue}{HTML}{2F7FC1}
+\definecolor{kred}{HTML}{D7263D}
+% column names of the data are written like code: \col{condition}
+\newcommand{\col}[1]{\texttt{#1}}
+\definecolor{kcream}{HTML}{FFF8F0}
+\definecolor{hairc}{HTML}{4A3428}\definecolor{skin}{HTML}{F1C9A5}
+\setbeamercolor{background canvas}{bg=kcream}
+\setbeamercolor{normal text}{fg=knavy}
+\setbeamersize{text margin left=0.4cm,text margin right=0.4cm}
+\setbeamertemplate{navigation symbols}{}
+\setlength{\TPHorizModule}{1cm}\setlength{\TPVertModule}{1cm}
+\def\secc{knavy}\def\secct{white}
+\setbeamertemplate{frametitle}{%
+  \vspace{0.22cm}%
+  \ifx\insertframetitle\empty\else
+  \tikz[baseline=(t.base)]\node[fill=\secc,text=\secct,rounded corners=9pt,inner xsep=11pt,inner ysep=5pt,font=\Large\bfseries](t){\insertframetitle};\fi%
+}
+% total number of slides for the footer: written to the .aux file at the end, read back in the next run (latexmk repeats the run by itself)
+\newcommand{\ktotalframes}{1}
+\makeatletter
+\AtEndDocument{\immediate\write\@auxout{\string\gdef\string\ktotalframes{\insertframenumber}}}
+\makeatother
+\setbeamertemplate{footline}{%
+  \leavevmode\vbox{%
+    \hbox to \paperwidth{\hfill{\color{knavy!70}\scriptsize\insertframenumber/\ktotalframes}\hspace{0.5cm}}%
+    \vskip 3pt%
+    {\color{\secc}\rule{\dimexpr\paperwidth*\insertframenumber/\ktotalframes\relax}{3pt}}%
+  }}
+\newcommand{\card}[5]{\begin{tikzpicture}\node[rounded corners=11pt,fill=#1!13,draw=#1!75,line width=1pt,%
+  inner sep=8pt,anchor=north west]{\parbox[t][\dimexpr#5-16pt\relax][t]{\dimexpr#2-16pt\relax}{\raggedright%
+  {\large\bfseries\color{#1!60!black}#3}\\[3pt]{\normalsize\color{knavy}#4}}};\end{tikzpicture}}
+% plain text blocks (no box): \knote{colour}{width}{title}{text} has a thin coloured rule on the left; \knum{colour}{width}{number}{label} is a big number
+\newcommand{\knote}[4]{\begin{tikzpicture}\node[text width=\dimexpr#2-18pt\relax,inner sep=0pt,inner xsep=9pt,align=left,anchor=north west](n){\def\ntmp{#3}\ifx\ntmp\empty\else{\large\bfseries\color{#1!60!black}#3}\\[3pt]\fi{\normalsize\color{knavy}#4}};%
+  \draw[line width=2.5pt,#1,line cap=round](n.north west)--(n.south west);\end{tikzpicture}}
+\newcommand{\knum}[4]{\begin{tikzpicture}\node[text width=#2,align=left,inner sep=0pt,anchor=north west]{{\fontsize{27}{29}\selectfont\bfseries\color{#1}#3}\\[1pt]{\normalsize\color{knavy}#4}};\end{tikzpicture}}
+% ---- placement: \atpos{x}{y}{width}{content}   (all in cm, from the top-left corner of the slide)
+%      \atfrom{n}{x}{y}{width}{content}  = same, but visible only from click n on
+%      \aton{n}{x}{y}{width}{content}    = same, but visible only on click n
+\newcommand{\atpos}[4]{\begin{textblock*}{#3cm}(#1cm,#2cm)\leavevmode #4\end{textblock*}}
+\newcommand{\atfrom}[5]{\ifdefined\NOPAUSE\atpos{#2}{#3}{#4}{#5}\else\only<#1->{\atpos{#2}{#3}{#4}{#5}}\fi}
+\newcommand{\aton}[5]{\only<#1>{\atpos{#2}{#3}{#4}{#5}}}
+% ---- the client figure on slide 2: one colour (knavy), slim, long hair, trousers.  Drawn inside a tikzpicture,
+%      feet at (0,0), about 4.5 cm tall.  Edit the coordinates to change the shape.
+\newcommand{\clientfigure}{%
+  \fill[knavy,draw=kcream,line width=0.8pt] (0,4.5) .. controls (-0.55,4.5) and (-0.62,3.3) .. (-0.45,2.4) -- (0.45,2.4) .. controls (0.62,3.3) and (0.55,4.5) .. (0,4.5); % long hair
+  \draw[knavy,line width=3pt] (0,3.6) -- (0,3.2);                                                      % neck
+  \fill[kcream,draw=knavy,line width=1pt] (0,3.95) ellipse (0.3 and 0.4);                              % face
+  \fill[knavy] (-0.34,4.0) .. controls (-0.3,4.45) and (0.28,4.5) .. (0.34,4.0) .. controls (0.15,4.2) and (-0.1,4.25) .. (-0.34,4.0); % fringe
+  \draw[knavy,line width=4pt,line cap=round] (-0.42,3.1) -- (-0.62,1.95) (0.42,3.1) -- (0.62,1.95);   % arms
+  \fill[knavy,draw=kcream,line width=1pt] (-0.45,3.2) -- (0.45,3.2) -- (0.38,1.95) -- (-0.38,1.95) -- cycle; % top
+  \fill[knavy] (-0.38,1.88) -- (-0.02,1.88) -- (-0.07,0) -- (-0.34,0) -- cycle;                       % left leg
+  \fill[knavy] (0.38,1.88) -- (0.02,1.88) -- (0.07,0) -- (0.34,0) -- cycle;                           % right leg
+}
+\newcommand{\pillnum}[2]{\tikz[baseline=(c.base)]\node[circle,fill=#1,text=white,inner sep=0pt,minimum size=0.56cm,text width=0.56cm,align=center,font=\scriptsize\bfseries](c){#2};}
+
+% ---- pauses (everything below does nothing in main_nopauses.tex, where \NOPAUSE is defined: all is shown at once)
+%   \atfrom{n}{x}{y}{width}{...}   a placed block that appears at click n            (defined above)
+%   \node[kvis=n, ...] / \fill[kvis=n, ...]   a tikz object that appears at click n
+%   \kreveal{n}{text}              text inside a tikz node that appears at click n (the space stays reserved)
+\usetikzlibrary{overlay-beamer-styles}
+\ifdefined\NOPAUSE
+  \tikzset{kvis/.style={}}
+  \newcommand{\kreveal}[2]{#2}
+\else
+  \tikzset{kvis/.style={visible on=<#1->}}
+  \newcommand{\kreveal}[2]{\alt<#1->{#2}{\phantom{#2}}}
+\fi

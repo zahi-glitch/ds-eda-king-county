@@ -1,0 +1,17 @@
+[project]
+name = "ds-eda-king-county"
+version = "0.1.0"
+description = "Where should Erin Robinson buy houses in King County? Data cleaning, analysis and a Beamer talk, all generated from Python."
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "matplotlib>=3.9",
+    "scipy>=1.13",
+    "pillow>=10.4",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29",
+]
