@@ -7,8 +7,6 @@ The finished talk is in `output/`:
 - `King_County_talk.pdf`: the talk with pauses (one click reveals the next part of a slide).
 - `King_County_talk_no_pauses.pdf`: the same slides, everything shown at once.
 
-The words to say are in `reports/talk_script.md`.
-
 ## The three questions and the answers
 
 | | Question | Answer |
