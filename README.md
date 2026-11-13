@@ -1,6 +1,6 @@
 # King County housing: where should Erin buy?
 
-A 10-minute talk (plus 2 minutes of questions, 14 slides) for **Erin Robinson**, who wants to buy, improve and resell houses in King County, Washington, fairly and with a small profit.
+A 10-minute presentation for **Erin Robinson**, who wants to buy, improve and resell houses in King County, Washington, fairly and with a small profit.
 The data are 21,597 house sales from May 2014 to May 2015, plus a map of the zipcodes (both in `data/raw/`).
 
 The finished talk is in `output/`:
